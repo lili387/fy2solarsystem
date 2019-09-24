@@ -1,5 +1,5 @@
 # Simulering av planet runt sol
-För en enkel miljö där ni enkelt kan göra lite Först installera Processing [Processing](https://processing.org/) med python modul. Klona eller ladda ner detta repository.
+För en enkel miljö där ni enkelt kan göra lite Först installera [Processing](https://processing.org/) med python modul. Klona eller ladda ner detta repository, öppna [fy2solarsystem.pyde](fy2solarsystem.pyde) i _Processing_ och klicka på playknappen.
 
 ## Uppgifter
 1. Uppdatera planetens startvärden (position och hastighet) så att rörelsen blir en periodisk bana runt solen.
