@@ -43,11 +43,3 @@ def draw():
             planets.remove(planet) 
     
     sun.show()
-
-
-# 1) Uppdatera koden med nya startvärden så att planeten gör en bana runt solen
-# 2) Vad är mini radien, max max radien i din bana?
-# 3) Rita  
-# 3) Skapa två planeter till, med andra radier och omploppstider. 
-#    Testa några olika banor (startvärden Beräkna R^3/T^2 för flera olika banor, olika planeter
-# 4) Skapa en planet som snurrar runt en annan planet, som snurrar runt solen. Så som solen, jorden och månen.   

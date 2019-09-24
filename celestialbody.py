@@ -35,7 +35,6 @@ class CelestialBody:
         
     def applyForce(self, fx, fy):
         self.ax += fx/self.m
-        print('Acceleration ='+str(self.ax))
         self.ay += fy/self.m
         
     def distance(self, body):
