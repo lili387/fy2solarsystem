@@ -6,16 +6,15 @@ sun = CelestialBody(1.989E30, 0, 0, 0, 0, 'star')
 
 #constants
 G = 6.67408E-11
-dt = 60*60*10 #timestep, one month
+dt = 60*60*24 # Time step one day
 
 def setup():
     size(600,600) # Sets the size of the window
     
     sun = CelestialBody(1.989E30, 0, 0, 0, 0, 'star')
-    planet = CelestialBody(5.972E24, 1.496E11, 0, 0, 1.0E4, 'planet')
+    planet = CelestialBody(5.972E24, 1.496E11, 0, 0, 2.0E4, 'planet')
     planets.append(planet)
 
-    
 def draw():
     background(3);  # Sets the background colour to (234, 234, 234)
 
@@ -35,7 +34,7 @@ def draw():
         planet.update(dt) # Updating the position of each ball, dt = 0.1
         planet.show() # tell the ball to show itself on the screen.
         
-    #  Remove planets craching in to star
+    #  Remove planets that crash in to the star
     for planet in planets[:]:
         l1 = planet.distance(sun)
         l2 = planet.r + sun.r

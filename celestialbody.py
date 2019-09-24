@@ -1,5 +1,4 @@
 class CelestialBody:
-    
     def __init__(self, m, x, y, v0x, v0y, bodyType):
         self.x = x 
         self.y = y
@@ -20,7 +19,7 @@ class CelestialBody:
     
         
     def show(self):
-        # scale system to 5 earth orbits on screen
+        # Scale system to show 5 earth orbits on screen
         a = 1.496E11
         x_pixel = self.x*300/5.0/1.496E11 + 300 #(self.x/a+0.5)*300
         y_pixel = self.y*300/5.0/1.496E11 + 300 #(self.y/a+0.5)*300
@@ -43,23 +42,10 @@ class CelestialBody:
         return sqrt(dx**2 + dy**2)      
                 
     def update(self, dt):
+        # delta_v/delta_t = a gives that  delta_v = a*delta_t
         self.vx += self.ax*dt
         self.vy += self.ay*dt
         self.x += self.vx*dt
         self.y += self.vy*dt
         self.ax = 0
         self.ay = 0
-        
-        #if self.x + self.r > width or self.x - self.r < 0:
-        #    self.applyForce(-2*self.vx*self.m/dt, 0)
-        #    if self.x + self.r > width:
-        #        self.x = width - self.r
-        #    else:
-        #        self.x = self.r
-        #                    
-        #if self.y + self.r > height or self.y - self.r < 0:
-        #    self.applyForce(0, -2*self.vy*self.m/dt)
-        #    if self.y + self.r > height:
-        #        self.y = height - self.r
-        #    else:
-        #        self.y = self.r
