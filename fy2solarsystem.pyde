@@ -12,7 +12,7 @@ def setup():
     size(600,600) # Sets the size of the window
     
     sun = CelestialBody(1.989E30, 0, 0, 0, 0, 'star')
-    planet = CelestialBody(5.972E24, 1.496E11, 0, 0, 2.0E4, 'planet')
+    planet = CelestialBody(5.972E24, 1.496E11, 0, 0, 1.0E4, 'planet')
     planets.append(planet)
 
 def draw():
